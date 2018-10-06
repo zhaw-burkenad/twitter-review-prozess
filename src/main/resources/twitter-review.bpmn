@@ -37,7 +37,7 @@
     <bpmn:startEvent id="TweetAnfrageEingereicht" name="Tweet-Anfrage&#10;eingereicht" camunda:asyncAfter="true" camunda:initiator="anfrageStellenderBenutzer">
       <bpmn:extensionElements>
         <camunda:formData>
-          <camunda:formField id="email" label="e-Mail" type="string" />
+          <camunda:formField id="email" label="E-Mail" type="string" />
           <camunda:formField id="tweetContent" label="Zu veröffentlichender Text" type="string" />
         </camunda:formData>
       </bpmn:extensionElements>
@@ -78,7 +78,7 @@
     <bpmn:userTask id="TweetAnfragePruefen" name="Tweet-Anfrage prüfen" camunda:candidateGroups="kommunikationsabteilung">
       <bpmn:extensionElements>
         <camunda:formData>
-          <camunda:formField id="email" label="e-Mail" type="string" />
+          <camunda:formField id="email" label="E-Mail" type="string" />
           <camunda:formField id="tweetContent" label="Zu veröffentlichender Text" type="string" />
           <camunda:formField id="checkResult" label="Prüfergebnis" type="enum">
             <camunda:value id="accepted" name="Genehmigt" />
